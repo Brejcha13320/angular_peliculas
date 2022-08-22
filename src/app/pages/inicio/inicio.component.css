@@ -1,0 +1,8 @@
+.btn-group {
+    width: 100%;
+}
+
+button:hover {
+    font-weight: bold;
+    color: gold;
+}

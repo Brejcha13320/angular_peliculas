@@ -1,0 +1,18 @@
+p {
+    text-align: justify;
+}
+
+.conjunto {
+    position: relative;
+}
+
+.badge-img {
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+}
+
+img {
+    border-radius: 5px;
+    border: 3px solid teal; 
+}

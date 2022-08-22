@@ -1,0 +1,33 @@
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <h1>{{pelicula?.original_title}}</h1>
+        <div class="col-md-4 mr-2 mt-2">
+            <div class="conjunto">
+                <img src="{{pelicula | noimage}}" class="img-fluid " alt="">
+                <span class="badge bg-primary badge-img">{{pelicula?.release_date | date:'YYYY'}}</span>
+            </div>
+        </div>
+    
+        <div class="col-md-8 mt-2">
+            <h3>Sinopsis</h3>
+            <hr>
+            <p>{{pelicula?.overview}}</p>
+            <div *ngIf="pelicula?.tagline">
+                <h3>Frases Celebres</h3>
+                <p>{{pelicula?.tagline}}</p>
+            </div>
+            
+            <div *ngIf="pelicula?.popularity">
+                Polularidad: 
+                <span class="badge bg-primary">{{pelicula?.popularity | number:'1.0-0'}}/100</span>                    
+            </div>
+            <div *ngIf="pelicula?.vote_average">
+                Voto Promedio: 
+                <span class="badge bg-primary">{{pelicula?.vote_average}}</span>
+            </div>
+            
+            <button class="btn btn-outline-danger mt-3" (click)="regresar()" >Regresar</button>
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+
+<div class="col">
+  <div class="card h-100" (click)="informacion(pelicula)" >
+    <div class="conjunto">
+      <img [src]="pelicula | noimage" class="card-img-top" alt="...">
+      <span class="badge bg-primary">{{pelicula.release_date | date:'YYYY'}}</span>
+    </div>
+    <div class="card-body text-center">
+      <h5 class="card-title">{{ pelicula.title }}</h5>
+    </div>
+  </div>
+</div>
+  

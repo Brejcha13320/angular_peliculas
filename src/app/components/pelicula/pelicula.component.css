@@ -1,0 +1,23 @@
+img {
+    height: 400px;
+}
+
+.card-body {
+    background: #223143;
+    border-radius: 0px 0px 5px 5px;
+    color: white;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.conjunto {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+}

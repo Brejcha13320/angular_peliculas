@@ -1,0 +1,20 @@
+<div class="m-3">
+    <h1>Panel de Busqueda</h1>
+</div>
+<hr>
+
+<div class="container">
+    <button class="btn btn-primary m-1" *ngFor="let fullYear of years" (click)="getPeliculasYear(fullYear)" #buttons >{{fullYear}}</button>
+</div>
+
+
+
+<div class="container mt-5 mb-5">
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" [value]="search" (keyup)="buscando(buscador.value)" #buscador placeholder="Buscar por Nombre">
+        <span class="input-group-text" (click)="buscador.value = ''" >
+            <i class="fas fa-trash"></i>
+        </span>
+    </div>
+    <router-outlet></router-outlet>
+</div>
